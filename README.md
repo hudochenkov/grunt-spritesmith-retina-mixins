@@ -6,6 +6,7 @@ Template and [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)
 
 * One variable for all sprite elements information instead of variable for each image.
 * Using one folder for all sprite images. Better see if you forget retina or non-retina image version.
+* One generated scss-file.
 * Simple mixins usage without duplicating sprite element's name.
 
 ## Usage
