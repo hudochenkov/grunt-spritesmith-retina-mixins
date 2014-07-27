@@ -1,0 +1,8 @@
+.DS_Store
+.sass-cache
+node_modules
+
+example/img/sprite.png
+example/img/sprite@2x.png
+example/scss/_sprite.scss
+example/main.css

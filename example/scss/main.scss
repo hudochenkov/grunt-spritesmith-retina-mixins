@@ -1,0 +1,16 @@
+@import "sprite";
+
+.retina-sprite {
+	@include sprite("scroll-down");
+}
+.retina-sprite--without-size {
+	@include sprite("scroll-down", false);
+}
+.retina-sprite-properties {
+	@include sprite-width("scroll-down");
+	@include sprite-height("scroll-down");
+	@include sprite-size("scroll-down");
+	@include sprite-position("scroll-down");
+	@include sprite-image("scroll-down");
+	@include sprite-image-retina("scroll-down");
+}

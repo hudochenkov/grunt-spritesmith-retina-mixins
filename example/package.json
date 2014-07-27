@@ -1,0 +1,16 @@
+{
+  "name": "grunt-spritesmith-retina-mixins-example",
+  "version": "1.0.0",
+  "description": "Retina sprite mixins for grunt-spritesmith",
+  "license": "MIT",
+  "author": "Aleks Hudochenkov <aleks@hudochenkov.com> (http://hudochenkov.com)",
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/hudochenkov/grunt-spritesmith-retina-mixins.git"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-spritesmith": "^2.1.1"
+  }
+}
