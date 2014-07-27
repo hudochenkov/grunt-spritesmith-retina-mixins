@@ -132,7 +132,7 @@ Compiles to:
 
 ### Example
 
-You can see full usage example at this repo's [example](tree/master/example) folder.
+You can see full usage example at this repo's [example](example) folder.
 
 ## Thanks
 
