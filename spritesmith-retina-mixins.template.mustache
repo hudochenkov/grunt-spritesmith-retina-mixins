@@ -35,11 +35,14 @@ $sprite: (
 }
 
 @mixin sprite-image($image) {
-	background-image: url(map-get(map-get($sprite, $image), 'image') + '.png');
+	background-image: url(map-get(map-get($sprite, $image), 'image'));
 }
 
 @mixin sprite-image-retina($image) {
-	background-image: url(map-get(map-get($sprite, $image), 'image') + '@2x.png');
+	$image-path: map-get(map-get($sprite, $image), 'image');
+	$image-path-retina: str-slice($image-path, 1, str-index($image-path, '.png') - 1) + '@2x.png';
+
+	background-image: url($image-path-retina);
 }
 
 @mixin sprite($image, $size: true) {

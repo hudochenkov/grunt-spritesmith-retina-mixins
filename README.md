@@ -21,28 +21,20 @@ Template and [grunt-spritesmith](https://github.com/Ensighten/grunt-spritesmith)
     sprite: {
         buildretina: {
             'src': ['img/sprite/*@2x.png'],
-            'destImg': 'img/sprite@2x.png',
-            'destCSS': 'scss/_sprite.scss',
-            'padding': 20,
-            'algorithm': 'binary-tree',
-            'engine': 'auto'
+            'dest': 'img/sprite@2x.png',
+            'destCss': 'scss/_sprite.scss',
+            'padding': 20
         },
         build: {
             'src': ['img/sprite/*.png', '!<%= sprite.buildretina.src %>'],
-            // destImg should be same as in sprite:buildretina task, but without @2x
-            'destImg': 'img/sprite.png',
+            // dest should be same as in sprite:buildretina task, but without @2x
+            'dest': 'img/sprite.png',
             // padding should be twice smaller, than padding in sprite:buildretina task
             'padding': 10,
             // path to template
             'cssTemplate': '../spritesmith-retina-mixins.template.mustache',
 
-            // don't edit below
-            'cssVarMap': function (sprite) {
-                sprite.image = sprite.image.replace(".png", "");
-            },
-            'algorithm': '<%= sprite.buildretina.algorithm %>',
-            'destCSS': '<%= sprite.buildretina.destCSS %>',
-            'engine': '<%= sprite.buildretina.engine %>'
+            'destCss': '<%= sprite.buildretina.destCss %>'
         }
     }
     ```
